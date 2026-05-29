@@ -1,0 +1,21 @@
+In this challenge, you need to calculate and print the sum of elements in an array, considering that some integers may be very large.
+
+Function description: Implement a function that accepts an array of integers and returns the sum of its elements.
+
+Input format:
+First line: an integer 𝑛, the size of the array.
+Second line: 𝑛 space-separated integers representing the array elements.
+
+Output format: 
+A single integer, the sum of the array elements.
+
+Constraints: 
+The sum may exceed the range of a 32-bit integer, so a larger data type (e.g., long in C/C++/Java) should be used.
+
+Sample input/output:
+Input:
+5
+1000000001 1000000002 1000000003 1000000004 1000000005
+
+Output:
+5000000015
