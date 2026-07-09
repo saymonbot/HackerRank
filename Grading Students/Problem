@@ -1,0 +1,23 @@
+Students at HackerLand University receive grades between 0 and 100.
+Any grade below 40 is considered failing.
+
+The professor applies a rounding policy:
+  If the grade is less than 38, it is not rounded because it would still be failing.
+  If the grade is 38 or higher, it is rounded up to the next multiple of 5 if the difference between the grade and that multiple is less than 3.
+  Otherwise, the grade remains unchanged.
+
+The task is to implement a function that adjusts student grades according to these rules.
+
+Input format:
+The first line contains an integer n, the number of students.
+Each of the next n lines contains a grade.
+
+Constraints:
+1 ≤ n ≤ 60
+Each grade is between 0 and 100
+
+Sample case:
+Input: 4 students with grades 73, 67, 38, 33
+Output: 75, 67, 40, 33
+
+Explanation: 73 rounds to 75, 67 stays the same, 38 rounds to 40, and 33 stays the same.
