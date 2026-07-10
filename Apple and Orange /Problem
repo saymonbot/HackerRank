@@ -1,0 +1,43 @@
+Sam's house has an apple tree and an orange tree that yield an abundance of fruit.
+Using the information given below, determine the number of apples and oranges that land on Sam's house.
+
+Sam’s house is represented as a segment on the x-axis, with a starting point s and an ending point t.
+The apple tree is located at point a, to the left of the house.
+The orange tree is located at point b, to the right of the house.
+
+When a fruit falls from a tree, it lands at a certain distance from the tree’s position along the x-axis:
+  A negative distance means the fruit falls to the left of the tree.
+  A positive distance means the fruit falls to the right.
+
+Task: Given the positions determine how many apples and oranges land on Sam’s house (i.e., within the inclusive range [s, t]).
+
+Function description:
+Implement countApplesAndOranges(s, t, a, b, apples, oranges) that prints two integers:
+  The number of apples that fall on the house.
+  The number of oranges that fall on the house.
+
+Input format:
+Line 1: two integers, s and t (start and end of the house).
+Line 2: two integers, a and b (positions of the apple and orange trees).
+Line 3: two integers, m and n (number of apples and oranges).
+Line 4: m integers, distances each apple falls from tree a.
+Line 5: n integers, distances each orange falls from tree b.
+
+Output format:
+First line: number of apples on the house.
+Second line: number of oranges on the house.
+
+Sample input:
+7 11
+5 15
+3 2
+-2 2 1
+5 -6
+
+Sample output:
+1
+1
+
+Explanation:
+Apples land at positions 3, 7, and 6. Only one apple (at 7) is within [7, 11].
+Oranges land at positions 20 and 9. Only one orange (at 9) is within [7, 11].
